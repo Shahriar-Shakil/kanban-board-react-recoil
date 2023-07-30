@@ -39,7 +39,7 @@ export default function Layout({ children, page }) {
             Users
           </Link>
         </div>
-        <img src="/logo.svg" alt="Logo" className="h-12 w-auto ml-auto" />
+        <img src="/Recoil.svg" alt="Logo" className="h-12 w-auto ml-auto" />
       </div>
       {children}
     </div>
