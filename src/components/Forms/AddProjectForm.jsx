@@ -37,11 +37,13 @@ export default function AddProjectForm({ project, title, setModalOpen }) {
     };
 
     if (project?.id) {
+      // edit existing
       editProject({
         id: project?.id,
         ...params,
       });
     } else {
+      // add new
       addProject(params);
     }
 
