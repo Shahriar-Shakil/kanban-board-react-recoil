@@ -1,24 +1,32 @@
-# Kanban Board App
+# Kanban Board - React with Recoil State Management
 
-This project is a Kanban board application built with React DND (Drag and Drop) and Redux Toolkit. The app allows users to efficiently manage tasks and visualize work progress using a Kanban board layout.
+This project is a Kanban board application built using React and Recoil for state management. The Kanban board allows users to manage tasks efficiently and visualize work progress. Below are the features implemented:
 
-## Features
-
-- Drag and drop tasks between different lists representing different stages .
+- Create multiple lists to represent different stages of tasks.
 - Add tasks to any list with a title, description, and due date.
-- Edit existing tasks to modify their title, description, or due date.
-- Delete tasks from any list.
-- Create users from the User page. By default, two demo users are already added to the app.
+- Implement drag-and-drop functionality to move tasks between lists and update their status.
+- Allow users to edit existing tasks to modify their title, description, or due date.
+- Provide the option to delete tasks from any list.
+- Optional: Implement a feature to assign users to tasks.
+- Optional: Add a filter to view tasks based on their assignment.
 
-## Installation
+## Live Demo
+
+The application is deployed on Netlify and can be accessed [here](https://kanban-board-react-recoil.netlify.app/).
+
+## Getting Started
+
+Follow the steps below to run the application locally on your machine:
 
 1. Clone the repository:
 
-### `git clone https://github.com/Shahriar-Shakil/Kanban-board-react-redux.git`
+   ```bash
+   git clone https://github.com/your-username/kanban-board-react-recoil.git
+   ```
 
 2. Change into the project directory:
 
-### `cd Kanban-board-react-redux`
+### `cd kanban-board-react-recoil`
 
 3. Install the dependencies:
 
@@ -38,17 +46,12 @@ You can also try the live version of the Kanban board app by visiting the follow
 
 [https://kanban-board-react-redux.netlify.app/](https://kanban-board-react-redux.netlify.app/)
 
-## Persistence
+## State Management with Recoil
 
-The Redux store is persisted to the local storage, which means that the app's state will be saved even after the page is refreshed. If any issues occur or if you want to start the app from its initial state, you can clear the local storage.
+The application uses Recoil for state management instead of Redux. Recoil is a state management library developed by Facebook specifically for React applications. It offers a simple and intuitive way to manage application state without the need for complex setup and boilerplate code.
 
-## Authentication
+In this application, we manage the state of users, projects, and filters using Recoil atoms and selectors. The Recoil state is also persisted to local storage using the recoil-persist package to maintain state between page reloads.
 
-This app does not require authentication. Users can directly access the Kanban board and manage tasks without the need for login credentials.
+## Users and Projects
 
-## Acknowledgments
-
-This project was created using Create React App and the following libraries:
-
-- React DND (Drag and Drop) for managing the task movement on the Kanban board.
-- Redux Toolkit for state management.
+The application allows users to create, edit, and delete projects on the Kanban board. Users can also be assigned to projects.
