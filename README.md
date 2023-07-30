@@ -21,7 +21,7 @@ Follow the steps below to run the application locally on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/kanban-board-react-recoil.git
+   git clone https://github.com/Shahriar-Shakil/kanban-board-react-recoil
    ```
 
 2. Change into the project directory:
@@ -39,12 +39,6 @@ Follow the steps below to run the application locally on your machine:
 ### `npm start`
 
 2. Open your browser and go to http://localhost:3000 to access the Kanban board app.
-
-## Live Demo
-
-You can also try the live version of the Kanban board app by visiting the following link:
-
-[https://kanban-board-react-redux.netlify.app/](https://kanban-board-react-redux.netlify.app/)
 
 ## State Management with Recoil
 
